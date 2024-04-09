@@ -1,30 +1,50 @@
-.employee-list {
-    max-width: 800px;
-    margin: 5rem auto;
-    padding: 20px;
-  }
+.employee-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+  margin-left: 20%;
   
-  .employee-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #e0e0e0;
+  padding: 8px;
+  text-align: center;
+}
+
+.employee-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+.employee-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.employee-table tr:hover {
+  background-color: #fafafa;
+}
+.employee-table tr:hover{
+  background-color: rgb(217, 248, 248);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  width: 80%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.table-heading{
+  margin-top:7%;
   
-  .employee-table th,
-  .employee-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .employee-table th {
-    background-color: #f2f2f2;
-  }
-  
-  .employee-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  .employee-table tr:hover {
-    background-color: #f2f2f2;
-  }
-  
+  align-items: center;
+}
+
+
+button{
+  margin-left: 0.7rem;
+}
