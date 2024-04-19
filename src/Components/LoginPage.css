@@ -1,0 +1,26 @@
+.login-card{
+    margin-top: 14%;
+    left:13%;
+    background-color: rgb(238, 199, 233);
+}
+.login-btn{
+    background-color: rgb(106, 200, 231);
+    border: 2px solid rgba(53, 169, 215, 0.9);
+    width: 40%;
+    margin: auto;
+
+}
+.login-btn:hover{
+    background-color: rgba(112, 243, 72, 0.954);
+    border: 2px solid rgba(50, 155, 29, 0.9);
+}
+.input-label{
+    width: 80%;
+    margin: auto;
+}
+.brand-logo{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900 !important;
+    color:rgb(220, 76, 210);
+    font-style:oblique;
+}

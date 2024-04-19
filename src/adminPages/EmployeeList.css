@@ -2,8 +2,8 @@
   width: 80%;
   border-collapse: collapse;
   margin: auto;
-  margin-left: 20%;
-  
+  margin-left: 16%;
+  margin-bottom:2%; 
 }
 
 .employee-table th,
@@ -11,6 +11,15 @@
   border: 1px solid #e0e0e0;
   padding: 8px;
   text-align: center;
+}
+.addEmp-btn{
+  margin-top: -3rem;
+  right:4%;
+  position: absolute;
+  font-weight: 400;
+  color: white;
+  background-color: rgb(240, 133, 133);
+  z-index: 3;
 }
 
 .employee-table th {

@@ -1,0 +1,98 @@
+.addEmp-container {
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 550px;
+  width: 450px;
+  transform: translate(-50%, -50%);
+  background-color: #fff8f8;
+  padding: 20px 40px;
+  border-radius: 8px; 
+  z-index: 10;  
+  transition-duration: 4s;
+  transition-property: ease-in-out;
+  transition: modalFadeIn 5s ease-in-out; 
+}
+
+.open-modal-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 5s cubic-bezier(1, 0.82, 0.165, 1);
+  /* animation: modalFade 10s ease-in-out; */
+}
+
+
+
+
+@keyframes modalFade {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+}
+  input[type='text'],
+  input[type='number'],
+  input[type='date'],
+  input[type='tel'],
+  select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  input:hover{
+    border: 1px solid green;
+  }
+
+  label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    color: rgb(19, 103, 182);
+    margin:5px auto;
+    font-weight: 400;
+    
+  }
+  #submit-btn{
+    margin-top: 5px;
+  }
+
+  input:invalid,
+  select:invalid {
+    border-color: #dc3545;
+  }
+  
+  input:invalid:focus,
+  select:invalid:focus {
+    box-shadow: 0 0 4px rgba(220, 53, 69, 0.5);
+  }
+
+  .input-error{
+    color: red;
+  }
